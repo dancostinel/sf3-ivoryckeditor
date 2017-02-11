@@ -1,0 +1,17 @@
+AppBundle\Entity\Example:
+    type: entity
+    table: examples
+    repositoryClass: AppBundle\Entity\ExampleRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        description:
+            type: text
+    lifecycleCallbacks: {  }
